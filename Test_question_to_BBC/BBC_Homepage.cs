@@ -45,25 +45,5 @@ namespace Test_question_to_BBC
         [FindsBy(How = How.XPath, Using = "(.//*[@class='text-input__input'])[4]")]
         public IWebElement fillPostcodeInput { get; set; }
 
-        /*public void Test()
-        {
-            this.driver.Navigate().GoToUrl("https://www.bbc.com/");
-            this.goToNews.Click();
-            Console.WriteLine("6");
-            this.goToMore.Click();
-            Console.WriteLine("7");
-            this.goToHaveYourSay.Click();
-            Console.WriteLine("8");
-            this.goToDoYouHaveAQuestion.Click();
-            //bBC_Homepage.fillQuestionTextarea.Click();
-            this.fillNameInput.Click();
-            this.fillNameInput.SendKeys("Iryna");
-            this.fillEmailInput.Click();
-            this.fillEmailInput.SendKeys("loripsum@gmail.com");
-            this.fillAgeInput.Click();
-            this.fillAgeInput.SendKeys("20");
-            this.fillPostcodeInput.Click();
-            this.fillPostcodeInput.SendKeys("02000");
-        }*/
     }
 }
