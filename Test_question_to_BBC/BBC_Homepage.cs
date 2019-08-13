@@ -28,10 +28,10 @@ namespace Test_question_to_BBC
         public IWebElement goToHaveYourSay { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//*[@id='topos-component']/div[4]/div/div[1]/div/div[1]/div/div[2]/div[1]/a")]
-        public IWebElement goToDoYouHaveAQuestion { get; set; } 
+        public IWebElement goToDoYouHaveAQuestion { get; set; }
 
-        [FindsBy(How = How.XPath, Using = "//*[@id='hearken-embed-module-3252-1a6b9-0']")]
-        public IWebElement fillQuestionTextarea { get; set; }
+		[FindsBy(How = How.ClassName, Using = "text-input-long")]
+		public IWebElement fillQuestionTextarea { get; set; }
 
         [FindsBy(How = How.XPath, Using = "(.//*[@class='text-input__input'])[1]")]
         public IWebElement fillNameInput { get; set; }

@@ -31,20 +31,13 @@ namespace Test_question_to_BBC
 
         public string[] generateLipsums()
         {
-            //Lorem Ipsum
             this.driver.Navigate().GoToUrl("https://www.lipsum.com/");
             this.valueInput.Click();
-            //Console.WriteLine("1");
             this.valueInput.Clear();
-            //Console.WriteLine("2");
             this.valueInput.SendKeys("141");
-            //Console.WriteLine("3");
             this.bytesLabel.Click();
-            //Console.WriteLine("4");
             this.generateInput.Click();
-            //Console.WriteLine("5");
             string lipsumFull = this.getLipsum.Text;
-            //Console.WriteLine("Text: " + lipsumFull);
             return new string[] { lipsumFull, lipsumFull.Substring(0, lipsumFull.Length - 1)};
         }
 
